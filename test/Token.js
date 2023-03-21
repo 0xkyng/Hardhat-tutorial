@@ -36,10 +36,10 @@ describe("Token contract", function () {
 const {loadFixture} = require("@nomicfoundation/hardhat-helpers");
 const {expect} = require("chai");
 
-// describe("Token contract", async function () {
-//   async function deployTokenFixture() {
-//     const Token = await ethers.getContractFactory("Token");
-//     const [owner, add1, add2] = await ethers.getSigners();
+describe("Token contract", async function () {
+  async function deployTokenFixture() {
+    const Token = await ethers.getContractFactory("Token");
+    const [owner, add1, add2] = await ethers.getSigners();
 
 //     const hardhatToken = await Token.deploy();
 
