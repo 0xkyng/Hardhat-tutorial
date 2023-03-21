@@ -41,9 +41,9 @@ describe("Token contract", async function () {
     const Token = await ethers.getContractFactory("Token");
     const [owner, add1, add2] = await ethers.getSigners();
 
-//     const hardhatToken = await Token.deploy();
+    const hardhatToken = await Token.deploy();
 
-//     await hardhatToken.deployed();
+    await hardhatToken.deployed();
 
 //     // Fixtures can return anything you consider useful for your tests
 //     return {Token, hardhatToken, owner, add1, add2} = loadFixture(deployTokenFixture)
