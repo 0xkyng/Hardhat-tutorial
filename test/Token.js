@@ -45,9 +45,9 @@ describe("Token contract", async function () {
 
     await hardhatToken.deployed();
 
-//     // Fixtures can return anything you consider useful for your tests
-//     return {Token, hardhatToken, owner, add1, add2} = loadFixture(deployTokenFixture)
-//   };
+     // Fixtures can return anything you consider useful for your tests
+    return {Token, hardhatToken, owner, add1, add2} = loadFixture(deployTokenFixture)
+};
 
 //   // Transfer 100 tokens from owner to add1
 //   await expect(
