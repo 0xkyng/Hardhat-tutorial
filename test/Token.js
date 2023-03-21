@@ -30,3 +30,27 @@ describe("Token contract", function () {
 
   })
 });
+
+
+// Reusing common test setups with fixtures
+const {loadFixture} = require("@nomicfoundation/hardhat-helpers");
+const {expect} = require("chai");
+
+// describe("Token contract", async function () {
+//   async function deployTokenFixture() {
+//     const Token = await ethers.getContractFactory("Token");
+//     const [owner, add1, add2] = await ethers.getSigners();
+
+//     const hardhatToken = await Token.deploy();
+
+//     await hardhatToken.deployed();
+
+//     // Fixtures can return anything you consider useful for your tests
+//     return {Token, hardhatToken, owner, add1, add2} = loadFixture(deployTokenFixture)
+//   };
+
+//   // Transfer 100 tokens from owner to add1
+//   await expect(
+//     hardhatToken.connect(addr1).transfer(addr2.address, 50)
+//   ).to.changeTokenBalances(hardhatToken, [addr1, addr2], [-50, 50]);
+// });
