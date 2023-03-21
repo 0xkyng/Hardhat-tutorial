@@ -49,8 +49,8 @@ describe("Token contract", async function () {
     return {Token, hardhatToken, owner, add1, add2} = loadFixture(deployTokenFixture)
 };
 
-//   // Transfer 100 tokens from owner to add1
-//   await expect(
-//     hardhatToken.connect(addr1).transfer(addr2.address, 50)
-//   ).to.changeTokenBalances(hardhatToken, [addr1, addr2], [-50, 50]);
-// });
+ // Transfer 100 tokens from owner to add1
+  await expect(
+    hardhatToken.connect(addr1).transfer(addr2.address, 50)
+  ).to.changeTokenBalances(hardhatToken, [addr1, addr2], [-50, 50]);
+});
